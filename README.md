@@ -52,6 +52,8 @@ void main() {
 ## Notes
 It uses `fwidth` glsl function to get texel density for each texture coord: U and V (As long as `texCoords` function argument will contain a vector that is calculated from texture coords that are passed from vertex shader). Also the reason why it requires `GL_OES_standard_derivatives` extension.
 
+Ensure to disable mip-maps if you use other method than getting texture by `texture(sampler, vec2( snapMin.x, snapMin.y ), -1)`. Otherwise it will have 1-pixel artifacts.
+
 To make it work texture must have `nearest` sampling, algo relies on those calculations that will be made by graphics driver.
 
 To get texture size you can use either `textureSize(AlbedoTexture, 0);` call, or pass it by uniform, or define it as a constant (least preferred method but can test it that way)
