@@ -30,7 +30,7 @@ vec4 textureNearestAntialias(sampler2D sampler, vec2 texCoords, vec2 texSize) {
 	vec2 snapMin = mix((floor(txMin) + 0.5) / texSize, texCoords, q);
 	vec2 snapMax = (floor(txMax) + 0.5) / texSize;
 	
-	vec4 c11 = texture(sampler, vec2( snapMin.x, snapMin.y ), -1);
+	vec4 c11 = texture(sampler, vec2( snapMin.x, snapMin.y ), -1); // -1 means don't use mip-maps (seems like)
 	vec4 c21 = texture(sampler, vec2( snapMax.x, snapMin.y ), -1);
 	vec4 c12 = texture(sampler, vec2( snapMin.x, snapMax.y ), -1);
 	vec4 c22 = texture(sampler, vec2( snapMax.x, snapMax.y ), -1);
