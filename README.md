@@ -7,12 +7,15 @@ The alorithm is implemented in `textureNearestAntialias` function of `fragment.g
 ## Preview
 
 Anti-aliased nearest sampling
+
 ![image-nearest-antialiased](https://github.com/NesCafe62/antialiased-nearest-sampling-glsl/assets/1944556/e9bb8042-698d-4fcb-9d7f-387ea527309d)
 
 Nearest sampling
+
 ![image-nearest](https://github.com/NesCafe62/antialiased-nearest-sampling-glsl/assets/1944556/a752c030-5667-44ec-bf65-a35c34f7d7c8)
 
 Linear sampling
+
 ![image-linear](https://github.com/NesCafe62/antialiased-nearest-sampling-glsl/assets/1944556/9e2d6663-37b7-42fd-94e4-986127d125e6)
 
 
