@@ -4,6 +4,18 @@ Implementation of antialiased nearest texture sampling in glsl shader language
 
 The alorithm is implemented in `textureNearestAntialias` function of `fragment.glsl`. Full code contains some more logic like lighting calculations. Decided to grab it whole without removing stuff, because I can be sure it will work.
 
+## Preview
+
+Anti-aliased nearest sampling
+![image-nearest-antialiased](https://github.com/NesCafe62/antialiased-nearest-sampling-glsl/assets/1944556/e9bb8042-698d-4fcb-9d7f-387ea527309d)
+
+Nearest sampling
+![image-nearest](https://github.com/NesCafe62/antialiased-nearest-sampling-glsl/assets/1944556/a752c030-5667-44ec-bf65-a35c34f7d7c8)
+
+Linear sampling
+![image-linear](https://github.com/NesCafe62/antialiased-nearest-sampling-glsl/assets/1944556/9e2d6663-37b7-42fd-94e4-986127d125e6)
+
+
  All logic related to nearest sampling with antialiasing represented by these lines of code in `fragment.glsl`:
 ```glsl
 #version 330
